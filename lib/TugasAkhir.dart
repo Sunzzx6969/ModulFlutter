@@ -22,7 +22,7 @@ class NewsApp extends StatelessWidget {
           children: [
             Image.asset(
               'Aset/Logo.jpeg',
-              height: 50,
+              height: 30,
             ),
             SizedBox(width: 8),
             Text('Bola ManUnited'),
@@ -74,7 +74,16 @@ class NewsApp extends StatelessWidget {
                               Container(
                                 child: Image(
                                   image: AssetImage('Aset/kontrak.jpeg'),
-                                  width: 650,
+                                  width: 300,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              Container(
+                                padding: EdgeInsets.all(8),
+                                margin: EdgeInsets.all(8),
+                                child: Image(
+                                  image: AssetImage('Aset/kontrak.jpeg'),
+                                  width: 300,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -82,14 +91,14 @@ class NewsApp extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          "De Ligt dari Bayern Munchen ke Manchester United, Here we Go !",
-                          style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
-                        ),
-                      ),
+                      // Padding(
+                      //   padding: const EdgeInsets.all(8.0),
+                      //   child: Text(
+                      //     "De Ligt dari Bayern Munchen ke Manchester United, Here we Go !",
+                      //     style: TextStyle(
+                      //         fontSize: 20, fontWeight: FontWeight.bold),
+                      //   ),
+                      // ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -201,12 +210,12 @@ class NewsApp extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
       padding: EdgeInsets.all(8),
       decoration: BoxDecoration(
-          color: Colors.grey[500],
+          color: Color.fromARGB(255, 255, 0, 0),
           borderRadius: BorderRadius.circular(5),
           border: Border.all(color: Colors.red),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.withOpacity(1.0),
+              color: Color.fromARGB(255, 0, 0, 0).withOpacity(1.0),
               spreadRadius: 5,
               blurRadius: 10,
               offset: Offset(0, 3),
