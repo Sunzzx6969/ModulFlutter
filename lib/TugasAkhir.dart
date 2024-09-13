@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_3/OVO.dart';
 
 class Newsbola extends StatelessWidget {
   const Newsbola({super.key});
@@ -13,22 +14,24 @@ class Newsbola extends StatelessWidget {
 }
 
 class NewsApp extends StatelessWidget {
+  const NewsApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 255, 0, 0),
+        backgroundColor: const Color.fromARGB(255, 255, 0, 0),
         title: Row(
           children: [
             Image.asset(
               'Aset/Logo.jpeg',
               height: 30,
             ),
-            SizedBox(width: 8),
-            Text('Bola ManUnited'),
+            const SizedBox(width: 8),
+            const Text('Bola ManUnited'),
           ],
         ),
-        actions: [
+        actions: const [
           Icon(Icons.notifications),
           SizedBox(width: 16),
         ],
@@ -37,20 +40,20 @@ class NewsApp extends StatelessWidget {
         children: [
           // TabBar section
           Container(
-            color: Color.fromARGB(255, 0, 0, 0),
+            color: const Color.fromARGB(255, 0, 0, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     "BERITA TERBARU",
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     "PERTANDINGAN HARI INI",
                     style: TextStyle(color: Colors.white),
                   ),
@@ -72,16 +75,7 @@ class NewsApp extends StatelessWidget {
                           Row(
                             children: [
                               Container(
-                                child: Image(
-                                  image: AssetImage('Aset/kontrak.jpeg'),
-                                  width: 300,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              Container(
-                                padding: EdgeInsets.all(8),
-                                margin: EdgeInsets.all(8),
-                                child: Image(
+                                child: const Image(
                                   image: AssetImage('Aset/kontrak.jpeg'),
                                   width: 300,
                                   fit: BoxFit.cover,
@@ -91,52 +85,54 @@ class NewsApp extends StatelessWidget {
                           ),
                         ],
                       ),
-                      // Padding(
-                      //   padding: const EdgeInsets.all(8.0),
-                      //   child: Text(
-                      //     "De Ligt dari Bayern Munchen ke Manchester United, Here we Go !",
-                      //     style: TextStyle(
-                      //         fontSize: 20, fontWeight: FontWeight.bold),
-                      //   ),
-                      // ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          "De Ligt dari Bayern Munchen ke Manchester United, Here we Go !",
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold),
+                        ),
+                      ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Row(
                             children: [
                               Container(
-                                color: Color.fromARGB(255, 0, 0, 0),
-                                padding: EdgeInsets.symmetric(
+                                color: const Color.fromARGB(255, 0, 0, 0),
+                                padding: const EdgeInsets.symmetric(
                                     vertical: 6, horizontal: 10),
                                 child: TextButton(
                                   onPressed: () {},
-                                  child: Text(
+                                  child: const Text(
                                     "Transfer",
                                     style: TextStyle(color: Colors.white),
                                   ),
                                 ),
                               ),
-                              SizedBox(height: 8),
+                              const SizedBox(height: 8),
                               Container(
-                                color: Color.fromARGB(255, 0, 0, 0),
-                                padding: EdgeInsets.symmetric(
+                                color: const Color.fromARGB(255, 0, 0, 0),
+                                padding: const EdgeInsets.symmetric(
                                     vertical: 6, horizontal: 10),
                                 child: TextButton(
-                                  onPressed: () {},
-                                  child: Text(
+                                  onPressed: () {
+                                    HomeScreen();
+                                  },
+                                  child: const Text(
                                     "Lucky Spin",
                                     style: TextStyle(color: Colors.white),
                                   ),
                                 ),
                               ),
-                              SizedBox(height: 8),
+                              const SizedBox(height: 8),
                               Container(
-                                color: Color.fromARGB(255, 0, 0, 0),
-                                padding: EdgeInsets.symmetric(
+                                color: const Color.fromARGB(255, 0, 0, 0),
+                                padding: const EdgeInsets.symmetric(
                                     vertical: 6, horizontal: 10),
                                 child: TextButton(
                                   onPressed: () {},
-                                  child: Text(
+                                  child: const Text(
                                     "Buy Shirt",
                                     style: TextStyle(color: Colors.white),
                                   ),
@@ -187,7 +183,7 @@ class NewsApp extends StatelessWidget {
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 0,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
@@ -207,18 +203,18 @@ class NewsApp extends StatelessWidget {
 
   Widget newsItem(String imageUrl, String title, String subtitle) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-      padding: EdgeInsets.all(8),
+      margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+      padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
-          color: Color.fromARGB(255, 255, 0, 0),
+          color: const Color.fromARGB(255, 255, 0, 0),
           borderRadius: BorderRadius.circular(5),
           border: Border.all(color: Colors.red),
           boxShadow: [
             BoxShadow(
-              color: Color.fromARGB(255, 0, 0, 0).withOpacity(1.0),
+              color: const Color.fromARGB(255, 0, 0, 0).withOpacity(1.0),
               spreadRadius: 5,
               blurRadius: 10,
-              offset: Offset(0, 3),
+              offset: const Offset(0, 3),
             )
           ]),
       child: Row(
@@ -229,19 +225,20 @@ class NewsApp extends StatelessWidget {
             height: 100,
             fit: BoxFit.cover,
           ),
-          SizedBox(width: 8),
+          const SizedBox(width: 8),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   title,
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  style: const TextStyle(
+                      fontSize: 16, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 Text(
                   subtitle,
-                  style: TextStyle(color: Colors.grey),
+                  style: const TextStyle(color: Colors.grey),
                 ),
               ],
             ),

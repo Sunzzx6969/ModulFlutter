@@ -11,26 +11,26 @@ class ScaffoldWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("TugasKU!"),
+        title: const Text("TugasKU!"),
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.home),
+          icon: const Icon(Icons.home),
         ),
         actions: [
-          Text("Sultan Muhammad Adji Pratama"),
+          const Text("Sultan Muhammad Adji Pratama"),
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.more_vert),
+            icon: const Icon(Icons.more_vert),
           )
         ],
-        backgroundColor: Color.fromARGB(255, 0, 153, 255),
+        backgroundColor: const Color.fromARGB(255, 0, 153, 255),
         foregroundColor: Colors.white,
       ),
       body: Column(
         children: [
           Container(
-            padding: EdgeInsets.only(left: 20),
-            margin: EdgeInsets.all(50),
+            padding: const EdgeInsets.only(left: 20),
+            margin: const EdgeInsets.all(50),
             height: 200,
             width: 2100,
             alignment: Alignment.center,
@@ -46,20 +46,18 @@ class ScaffoldWidget extends StatelessWidget {
               ),
             ),
           ),
-          DIALOGWIDGET(),
-          TextInput(),
-          Datewidget(
-            title: "Tanggal",
-          ),
-          Stack()
+          // DIALOGWIDGET(),
+          // TextInput(),
+        const Didget(title: "tanggal")
+          // Stack()
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color.fromARGB(255, 255, 0, 0),
+        backgroundColor: const Color.fromARGB(255, 255, 0, 0),
         selectedItemColor: const Color.fromARGB(255, 255, 255, 255),
         unselectedItemColor: const Color.fromARGB(255, 0, 0, 0),
         currentIndex: 0,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(
               Icons.home,
@@ -82,7 +80,7 @@ class ScaffoldWidget extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         tooltip: "Increment Value",
-        child: Icon(Icons.plus_one),
+        child: const Icon(Icons.plus_one),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );

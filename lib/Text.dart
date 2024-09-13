@@ -14,7 +14,7 @@ class _TextInputState extends State<TextInput> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(12),
+      padding: const EdgeInsets.all(12),
       child: Column(
         children: [
           TextField(
@@ -23,13 +23,13 @@ class _TextInputState extends State<TextInput> {
             onChanged: (a) {
               setState(() {});
             },
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               border: OutlineInputBorder(),
               label: Text("input Nama"),
             ),
           ),
           Text(Nickname.text),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           TextField(
@@ -38,7 +38,7 @@ class _TextInputState extends State<TextInput> {
             onChanged: (a) {
               setState(() {});
             },
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               border: OutlineInputBorder(),
               label: Text("input Password"),
             ),

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Datewidget extends StatefulWidget {
-  const Datewidget({super.key, required this.title});
+class Didget extends StatefulWidget {
+  const Didget({super.key, required this.title});
   final String title;
 
   @override
-  State<Datewidget> createState() => _DatewidgetState();
+  State<Didget> createState() => _DatewidgetState();
 }
 
-class _DatewidgetState extends State<Datewidget> {
+class _DatewidgetState extends State<Didget> {
   DateTime selectedDate = DateTime.now();
   Future<Null> _selectedDate(BuildContext context) async {
     final DateTime? picked = await showDatePicker(
@@ -30,7 +30,7 @@ class _DatewidgetState extends State<Datewidget> {
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           Text("${selectedDate.toLocal()}".split(" ")[0]),
-          SizedBox(
+          const SizedBox(
             height: 20.0,
           ),
           ElevatedButton(
@@ -38,7 +38,7 @@ class _DatewidgetState extends State<Datewidget> {
               _selectedDate(context);
               print(selectedDate.day + selectedDate.month + selectedDate.year);
             },
-            child: Text("Pilih Tanggal"),
+            child: const Text("Pilih Tanggal"),
           )
         ],
       ),

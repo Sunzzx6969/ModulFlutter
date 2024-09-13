@@ -13,7 +13,7 @@ class StkPostDart extends StatelessWidget {
             children: [
               Container(
                 width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: Colors.green,
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(20),
@@ -23,13 +23,13 @@ class StkPostDart extends StatelessWidget {
                 child: Stack(
                   // alignment: Alignment.topCenter,
                   children: [
-                    Center(
+                    const Center(
                       child: Image(
                         image: AssetImage("Aset/money_bg.png"),
                         width: 200,
                       ),
                     ),
-                    Positioned(
+                    const Positioned(
                       left: 15,
                       bottom: 10,
                       child: Text(
@@ -41,7 +41,7 @@ class StkPostDart extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Positioned(
+                    const Positioned(
                       top: 175,
                       right: 20,
                       child: CircleAvatar(
@@ -54,7 +54,7 @@ class StkPostDart extends StatelessWidget {
                       top: 6,
                       right: 10,
                       child: PopupMenuButton<String>(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.more_vert,
                           color: Colors.white,
                           size: 30.0,
@@ -73,7 +73,7 @@ class StkPostDart extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Container(
@@ -85,26 +85,26 @@ class StkPostDart extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      padding: EdgeInsets.only(top: 10, left: 20),
+                      padding: const EdgeInsets.only(top: 10, left: 20),
+                      decoration: const BoxDecoration(
+                          border: Border(
+                        bottom: BorderSide(color: Colors.grey),
+                      )),
                       child: Text(
                         "Transaksi",
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
-                      decoration: BoxDecoration(
-                          border: Border(
-                        bottom: BorderSide(color: Colors.grey),
-                      )),
                     ),
-                    Container(
+                    SizedBox(
                       height: 200,
                       child: GridView.count(
                         crossAxisCount: 5,
                         mainAxisSpacing: 10,
                         crossAxisSpacing: 0,
-                        padding: EdgeInsets.all(8),
+                        padding: const EdgeInsets.all(8),
                         children: [
                           Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Image(
                                   image: AssetImage('Aset/pulsa.png'),
@@ -118,7 +118,7 @@ class StkPostDart extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Image(
                                   image: AssetImage('Aset/pln.png'),
@@ -132,7 +132,7 @@ class StkPostDart extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Image(
                                   image: AssetImage('Aset/tv.png'),
@@ -146,7 +146,7 @@ class StkPostDart extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Image(
                                   image: AssetImage('Aset/pulsa.png'),
@@ -160,7 +160,7 @@ class StkPostDart extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Image(
                                   image: AssetImage('Aset/pulsa.png'),
@@ -174,7 +174,7 @@ class StkPostDart extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Image(
                                   image: AssetImage('Aset/pulsa.png'),
@@ -188,7 +188,7 @@ class StkPostDart extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Image(
                                   image: AssetImage('Aset/pulsa.png'),
@@ -207,7 +207,7 @@ class StkPostDart extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Container(
@@ -219,26 +219,26 @@ class StkPostDart extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      padding: EdgeInsets.only(top: 10, left: 20),
+                      padding: const EdgeInsets.only(top: 10, left: 20),
+                      decoration: const BoxDecoration(
+                          border: Border(
+                        bottom: BorderSide(color: Colors.grey),
+                      )),
                       child: Text(
                         "Transaksi",
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
-                      decoration: BoxDecoration(
-                          border: Border(
-                        bottom: BorderSide(color: Colors.grey),
-                      )),
                     ),
-                    Container(
+                    SizedBox(
                       height: 200,
                       child: GridView.count(
                         crossAxisCount: 5,
                         mainAxisSpacing: 10,
                         crossAxisSpacing: 0,
-                        padding: EdgeInsets.all(8),
+                        padding: const EdgeInsets.all(8),
                         children: [
                           Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Image(
                                   image: AssetImage('Aset/pulsa.png'),
@@ -252,7 +252,7 @@ class StkPostDart extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Image(
                                   image: AssetImage('Aset/pln.png'),
@@ -266,7 +266,7 @@ class StkPostDart extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Image(
                                   image: AssetImage('Aset/tv.png'),
@@ -280,7 +280,7 @@ class StkPostDart extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Image(
                                   image: AssetImage('Aset/pulsa.png'),
@@ -294,7 +294,7 @@ class StkPostDart extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Image(
                                   image: AssetImage('Aset/pulsa.png'),
@@ -308,7 +308,7 @@ class StkPostDart extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Image(
                                   image: AssetImage('Aset/pulsa.png'),
@@ -322,7 +322,7 @@ class StkPostDart extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               children: [
                                 Image(
                                   image: AssetImage('Aset/pulsa.png'),

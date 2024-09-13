@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'package:flutter_application_3/ListView.dart';
 import 'ColumnWidget.dart';
 import 'DateWidget.dart';
 import 'Text.dart';
@@ -7,6 +9,7 @@ import 'dialog.dart';
 import 'image_Widget.dart';
 import 'scaffold.widget.dart';
 import 'Stack.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +28,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: Newsbola());
+        home:  Newsbola());
   }
 }

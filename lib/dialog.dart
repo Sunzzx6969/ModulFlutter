@@ -5,7 +5,7 @@ class DIALOGWIDGET extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Mylayout();
+    return const Mylayout();
   }
 }
 
@@ -17,7 +17,7 @@ class Mylayout extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: ElevatedButton(
-        child: Text("Show Alert"),
+        child: const Text("Show Alert"),
         onPressed: () {
           showAlertDialog(context);
         },
@@ -28,13 +28,13 @@ class Mylayout extends StatelessWidget {
 
 showAlertDialog(BuildContext context) {
   Widget okButton = ElevatedButton(
-    child: Text("OK"),
+    child: const Text("OK"),
     onPressed: () {},
   );
 
   AlertDialog alert = AlertDialog(
-    title: Text("My Title"),
-    content: Text("This is my massage"),
+    title: const Text("My Title"),
+    content: const Text("This is my massage"),
     actions: [okButton],
   );
 
