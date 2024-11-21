@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_3/widgets_function.dart';
+import './widgets_function.dart';
 
 class StkPostDart extends StatelessWidget {
   const StkPostDart({super.key});
@@ -103,104 +105,12 @@ class StkPostDart extends StatelessWidget {
                         crossAxisSpacing: 0,
                         padding: const EdgeInsets.all(8),
                         children: [
-                          Container(
-                            child: const Column(
-                              children: [
-                                Image(
-                                  image: AssetImage('Aset/pulsa.png'),
-                                  width: 50,
-                                ),
-                                Text(
-                                  "Pulsa",
-                                  style: TextStyle(fontSize: 10),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            child: const Column(
-                              children: [
-                                Image(
-                                  image: AssetImage('Aset/pln.png'),
-                                  width: 50,
-                                ),
-                                Text(
-                                  "PLN",
-                                  style: TextStyle(fontSize: 10),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            child: const Column(
-                              children: [
-                                Image(
-                                  image: AssetImage('Aset/tv.png'),
-                                  width: 50,
-                                ),
-                                Text(
-                                  "Langganan TV",
-                                  style: TextStyle(fontSize: 10),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            child: const Column(
-                              children: [
-                                Image(
-                                  image: AssetImage('Aset/pulsa.png'),
-                                  width: 50,
-                                ),
-                                Text(
-                                  "Pulsa",
-                                  style: TextStyle(fontSize: 10),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            child: const Column(
-                              children: [
-                                Image(
-                                  image: AssetImage('Aset/pulsa.png'),
-                                  width: 50,
-                                ),
-                                Text(
-                                  "Pulsa",
-                                  style: TextStyle(fontSize: 10),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            child: const Column(
-                              children: [
-                                Image(
-                                  image: AssetImage('Aset/pulsa.png'),
-                                  width: 50,
-                                ),
-                                Text(
-                                  "Pulsa",
-                                  style: TextStyle(fontSize: 10),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            child: const Column(
-                              children: [
-                                Image(
-                                  image: AssetImage('Aset/pulsa.png'),
-                                  width: 50,
-                                ),
-                                Text(
-                                  "Pulsa",
-                                  style: TextStyle(fontSize: 10),
-                                ),
-                              ],
-                            ),
-                          ),
+                          WidgetFF('Aset/pulsa.png', 'Pulsa'),
+                          WidgetFF('Aset/pln.png', 'PLN'),
+                          WidgetFF('Aset/TV.png', 'Langganan TV'),
+                          WidgetFF('Aset/pulsa.png', 'Pulsa'),
+                          WidgetFF('Aset/pln.png', 'PLN'),
+                          WidgetFF('Aset/TV.png', 'Langganan TV'),
                         ],
                       ),
                     ),

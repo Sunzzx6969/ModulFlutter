@@ -10,7 +10,6 @@ import 'image_Widget.dart';
 import 'scaffold.widget.dart';
 import 'Stack.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -28,6 +27,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home:  Newsbola());
+        home: StkPostDart());
   }
 }
